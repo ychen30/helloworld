@@ -1,0 +1,42 @@
+print ("There is a rumer. ")
+print ("If someone finds the elf, he/she will be super lucky for a week!")
+print ("Let's find the elf!")
+raw_input("press enter >")
+
+continent = {
+    "room1" : "Africa",
+    "room2" : "Europe",
+    "room3" : "Asia",
+    "room4" : "North America",
+    "room5" : "South America",
+    "room6" : "Australia",
+    "room7" : "Antarctica"
+}
+
+def printGraphic(inGraphic):
+  if (inGraphic == "elf"):
+    print """                                                
+                                              
+       *             ....              *                                 
+       *             .   ..            *                                 
+       *         -- .. ><  . --        *                                    
+       *            ..  - .            *                                  
+       *             .....             *                                 
+       *               .               *                                                 
+  """
+
+
+pcmd = raw_input("Let's scale down. Which continent will it be? ")
+  
+if (pcmd == "Europe"):
+	print "THEY WERE HERE.Try again."
+	
+elif (pcmd == "Australia"):
+	print "THEY WERE HERE.Try again."
+        
+elif (pcmd == "North America"):
+    printGraphic("elf")
+ 
+else:
+	print "Not even close."
+	
