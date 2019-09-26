@@ -1,0 +1,131 @@
+keychain = {
+	parts = ["ring", "key1", "key2","key3", "key4", "membershipcard"]
+	"ring": {
+	  "material": "stainless steel",
+	  "color": "silver",
+	  "shape": "circle"
+	}
+	"key1": {
+	"color": "black",
+	"with hole": yes,
+	"material": "plastic",
+	"direction": "home",
+	"sets of teeth": 0,
+	"kind": "Paracentric"
+	}
+	"key2": {
+	"color": "gold",
+	"with hole": yes,
+	"material": "copper",
+	"direction": "mailbox",
+	"sets of teeth": "10",
+	"Paracentric": "Paracentric"
+	}
+	"key3": {
+	"color": "gold",
+	"with hole": yes,
+	"material": "copper",
+	"direction": "drawer",
+	"sets of teeth": "10",
+	"Paracentric": "Paracentric"
+	}
+	"membershipcard": {
+	"shape": "square",
+	"color": "red",
+	"with hole": yes,
+	"content": ["barcode", "letter", "picture"],
+	}
+}
+
+
+Pencilbag = {
+		"parts": ["bag", "pencil", "ink pen", "eraser", "ballpen"],
+		"bag": {
+		"color": "pink",
+		"zipper": yes,
+		"material": "cloth",
+	}
+	"pencil": {
+		"color": "black",
+		"ink color": "black",
+		"automatic": yes,
+		"thickness of the led": 0.3,
+		"material": "plastic",
+		"write": yes,
+		"erasable": yes,
+		"eraser": yes,
+		"clip": false,
+	}
+	"ink pen": {
+		"color": "black",
+		"ink color": "black",
+		"automatic": no,
+		"thickness of the line": 0.5,
+		"material": "plastic",
+		"write": yes,
+		"erasable": false,
+		"eraser": false,
+		"clip": false
+	}
+	"ballpen": {
+		"color": "white",
+		"ink color": "black",
+		"automatic": false,
+		"thickness of the line": 0.5,
+		"material": "plastic",
+		"write": yes,
+		"erasable": false,
+		"eraser": false,
+		"clip": yes,
+		"eraser": false
+	"eraser": {
+		"color": "grey",
+		"automatic": false,
+		"material": "plastic",
+		"eraser": false,
+		"clip": false,
+		"eraser": false
+}
+
+
+eyedrops = {
+	"parts": ["cap", "bottle", "liquid"],
+	"liquid": {
+		"color": NaN,
+		"flow": yes,
+		"amount fl oz": 0.28,
+	}
+	"cap": {
+		"material": "plastic",
+		"color": "white",
+		"drop liquid out": false
+	}
+	"bottle": {
+		"color": NaN,
+		"material": "plastic",
+		"container": yes,
+		"drop liquid out": yes
+	}
+}
+
+
+lipBlam = {
+	"parts": ["cap", "bottle", "cream"],
+	"cream": {
+		"color": "white",
+		"flow": yes,
+		"weight grams": 3.8,
+	}
+	"cap": {
+		"material": "plastic",
+		"color": "white",
+		"screw": false
+	}
+	"bottle": {
+		"color": "white",
+		"material": "plastic",
+		"container": yes,
+		"screw": yes
+	}
+}
+
