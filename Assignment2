@@ -1,0 +1,11 @@
+{
+	"name": "Uni",
+	"location": "Brooklyn",
+	"gender": "male",
+	"species": "Cat",
+	"genus": "Cat",
+	"furry": true,
+	"Color": ["black", "white"],
+	"mammal": true,
+	"age": "2 years"
+}
