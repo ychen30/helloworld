@@ -1,0 +1,62 @@
+let x = 1;
+let y = 1;
+let easing = 0.05;
+
+function setup() {
+  createCanvas(300, 400);
+
+}
+
+function draw() {
+  background (3,27,136);
+  
+  //block1
+  fill(169,182,252);
+  noStroke();
+  rect(80,0,250,60);
+  
+  //block2
+  fill(169,182,252);
+  noStroke();
+  rect(0,130,150,200);
+  
+  //block3
+  fill(169,182,252);
+  noStroke();
+  rect(240,130,60,200);
+  
+  //fin
+  fill(255);
+  stroke(169,182,252);
+  strokeWeight(3);
+  rect(10, 350, 60, 30, 15);
+ 
+  
+  //ball moving
+  let targetX = mouseX;
+  let dx = targetX - x;
+  x += dx * easing;
+
+  let targetY = mouseY;
+  let dy = targetY - y;
+  y += dy * easing;
+  
+  //ball
+  noStroke();
+  fill(255);
+  ellipse(x, y, 20, 20);
+    tint(255, 100);
+
+  
+  if ( 65< x && x < 300 && y <70) {
+    fill(255,0,0);
+    rect(0, 0, 300, 400);
+  } else if ( 0<x && x<160 && y>115 && y<345){
+    fill(255,0,0);
+    rect(0, 0, 300, 400);
+  } else if ( 230<x && x<300 && y>120 && y<340) {
+    fill(255,0,0);
+    rect(0, 0, 300, 400);
+             }
+    
+}
