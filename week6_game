@@ -88,10 +88,11 @@ function gameObject() {
 
   this.checkCollisions = function() {
     // left and right
-    if (this.x <= 0) {
-      this.x = 0
-    } else if (this.x + this.size >= width) {
-      this.x = width - this.size;
+    
+    if (this.x <= this.size/2) {
+      this.x = this.size/2
+    } else if (this.x + this.size/2 >= width) {
+      this.x = width - this.size/2;
     }
 
     // up and down
